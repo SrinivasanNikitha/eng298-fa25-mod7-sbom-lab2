@@ -17,8 +17,27 @@ After completing this lab, you will be able to:
 4. Explain how patching operational environments supports *complete mediation* and *assurance* in the secure design lifecycle.
 
 ### **Terminology**
-**Packages**
-x
+**Packages** refer to the individual software components installed on your Ubuntu-based Codespace. A package is essentially a bundled unit of software, containing:
+* The program or library files
+* Metadata (version number, description, dependencies)
+* Instructions for installing, configuring, and removing it
+
+ These are managed by Ubuntu’s package manager ('apt') and include:
+* System utilities (e.g., bash, coreutils, curl)
+* Programming languages and runtimes (e.g., python3, gcc)
+* Libraries used by other programs (e.g., libssl, libc6)
+* Tools and services required by the operating system
+  
+In this assignment, when you run commands like:
+
+```bash
+dpkg -l
+apt list --installed
+syft packages:apt
+```
+
+...you are examining all the packages your Codespace depends on to function.
+These packages form the software supply chain of your operating environment — and generating SBOMs, scanning for CVEs, and applying updates allow you to evaluate and improve its security posture.
 
 **apt**
 x
