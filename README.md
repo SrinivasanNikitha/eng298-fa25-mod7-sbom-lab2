@@ -80,7 +80,13 @@ Before generating SBOMs, collect information about the current Ubuntu system in 
 
 ```bash
 syft packages dir:/ -o spdx-json > deliverables/system_sbom_before.json
-``` 
+```
+**Syntax Breakdown**:
+syft → run Syft
+packages → “packages” subcommand
+dir:/ → scan the root filesystem (/) for installed packages
+-o spdx-json → output as SPDX JSON
+> deliverables/system_sbom_before.json → save to your deliverables folder
 
 2. Use Grype to scan the SBOM for known vulnerabilities:
 
