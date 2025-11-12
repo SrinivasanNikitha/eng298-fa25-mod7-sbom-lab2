@@ -154,7 +154,7 @@ grype sbom:deliverables/system_sbom_before.json -o table > deliverables/system_v
    diff deliverables/before_patch.txt deliverables/after_patch.txt > deliverables/patch_diff.txt
    ```
 
-5. Review the resulting file (*patch_diff.txt*) to identify which packages were updated or removed.
+5. Review the resulting file (*patch_diff.txt*) to identify which packages were updated or removed (**NOTE**: *patch_diff.txt* will be empty if no updates were available).
 
 #### **Part 5 – Reflection**
 Answer the following in 2–3 sentences each:
