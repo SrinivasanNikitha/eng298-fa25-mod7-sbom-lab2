@@ -68,7 +68,7 @@ Before generating SBOMs, let's first collect information about the current Ubunt
    cat /etc/os-release
    ```
    
-2. View currently installed packages and save the output in *before_patch.txt* inside your `/deliverables` folder:
+2. View currently installed packages and save the output in *before_patch.txt* inside the `deliverables` folder:
     
    ```bash
    dpkg -l > deliverables/before_patch.txt
