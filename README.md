@@ -31,12 +31,11 @@ In this assignment, when you run commands like:
 
 ```bash
 dpkg -l
-apt list --installed
-syft scan:apt
+sudo apt update
+syft scan dir:/ -o spdx-json
 ```
 
-...you are examining all the packages your Codespace depends on to function.
-These packages form the software supply chain of your operating environment — and generating SBOMs, scanning for CVEs, and applying updates allow you to evaluate and improve its security posture.
+...you are examining all the packages your Codespace depends on to function. These packages form the software supply chain of your operating environment — and generating SBOMs, scanning for CVEs, and applying updates allow you to evaluate and improve its security posture.
 
 **apt**, short for **Advanced Package Tool**, is the package management system used by Ubuntu and other Debian-based Linux distributions. It is responsible for:
 * Installing new software,
